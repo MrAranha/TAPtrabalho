@@ -14,6 +14,8 @@ public class RepositoryDbContext : DbContext
 {
     private IConfiguration _configuration;
     public DbSet<Aluno> Alunos {get;set;}
+    //Eu sei que se escreve "solicitações"
+    public DbSet<Solicitacao> Solicitacaos {get;set;}
 
     public RepositoryDbContext(IConfiguration configuration){
         this._configuration = configuration;
@@ -46,10 +48,15 @@ public class RepositoryDbContext : DbContext
             .HasValueGenerator<GuidValueGenerator>()
             .IsRequired(true)
             ;
-
-
-        
-
+        modelBuilder.Entity<Solicitacao>()
+            .ToContainer("solicitacao")
+            .HasPartitionKey(p => p.id)
+            .HasAutoscaleThroughput(400)
+            .HasNoDiscriminator()
+            .Property(p => p.id)
+            .HasValueGenerator<GuidValueGenerator>()
+            .IsRequired(true)
+            ;
     }
 
 }

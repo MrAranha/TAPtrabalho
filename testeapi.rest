@@ -1,9 +1,9 @@
 ### Busca todos os alunos
-GET http://localhost:5075/api/v1/aluno
+GET http://localhost:5075/api/v1/solicitacao
 
 ### Inserir um aluno
 
-POST http://localhost:5075/api/v1/aluno
+POST http://localhost:5075/api/v1/solicitacao
 Content-Type: application/json
 
 {
