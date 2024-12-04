@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aranha\\Desktop\\tapr-2024-turmaa-colegio-csharp\\microservcolegio\\microservcolegio.csproj": {}
+    "/workspaces/TAPtrabalho/microservcolegio/microservcolegio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aranha\\Desktop\\tapr-2024-turmaa-colegio-csharp\\microservcolegio\\microservcolegio.csproj": {
+    "/workspaces/TAPtrabalho/microservcolegio/microservcolegio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aranha\\Desktop\\tapr-2024-turmaa-colegio-csharp\\microservcolegio\\microservcolegio.csproj",
+        "projectUniqueName": "/workspaces/TAPtrabalho/microservcolegio/microservcolegio.csproj",
         "projectName": "microservcolegio",
-        "projectPath": "C:\\Users\\Aranha\\Desktop\\tapr-2024-turmaa-colegio-csharp\\microservcolegio\\microservcolegio.csproj",
-        "packagesPath": "C:\\Users\\Aranha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aranha\\Desktop\\tapr-2024-turmaa-colegio-csharp\\microservcolegio\\obj\\",
+        "projectPath": "/workspaces/TAPtrabalho/microservcolegio/microservcolegio.csproj",
+        "packagesPath": "/home/codespace/.nuget/packages/",
+        "outputPath": "/workspaces/TAPtrabalho/microservcolegio/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Aranha\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/codespace/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -51,7 +45,15 @@
           "dependencies": {
             "Azure.Identity": {
               "target": "Package",
-              "version": "[1.13.0, )"
+              "version": "[1.13.1, )"
+            },
+            "Dapr.AspNetCore": {
+              "target": "Package",
+              "version": "[1.14.0, )"
+            },
+            "Dapr.Client": {
+              "target": "Package",
+              "version": "[1.14.0, )"
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
@@ -59,7 +61,7 @@
             },
             "Microsoft.EntityFrameworkCore.Cosmos": {
               "target": "Package",
-              "version": "[8.0.10, )"
+              "version": "[9.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -85,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.402/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
